@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 5 | Knowledge Knight</title>
+  <meta name="description" content="Explore Class 5 learning resources at Knowledge Knight.">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f9ff;
+      color: #172b50;
+    }
+    header {
+      height: 76px;
+      padding: 0 7%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e8edf6;
+    }
+    .brand {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #174db5;
+      text-decoration: none;
+    }
+    nav a {
+      text-decoration: none;
+      color: #536783;
+      font-size: 13px;
+      margin-left: 22px;
+      font-weight: bold;
+    }
+    .hero {
+      margin: 35px auto;
+      max-width: 1100px;
+      padding: 55px 7%;
+      border-radius: 22px;
+      background: linear-gradient(120deg,#e7efff,#f5f8ff);
+    }
+    .tag {
+      color: #2863d9;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    h1 {
+      font-size: clamp(38px,6vw,60px);
+      margin: 15px 0;
+      letter-spacing: -2px;
+    }
+    h1 span { color: #2863d9; }
+    .hero p {
+      color: #63748e;
+      line-height: 1.8;
+      max-width: 470px;
+    }
+    .section {
+      max-width: 1100px;
+      margin: 55px auto;
+      padding: 0 20px;
+    }
+    .section h2 {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: #8190a6;
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+    .subjects {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 16px;
+    }
+    .subject {
+      background: white;
+      border: 1px solid #e5ebf5;
+      border-radius: 15px;
+      padding: 22px;
+      text-decoration: none;
+      color: #172b50;
+      transition: .2s;
+    }
+    .subject:hover {
+      transform: translateY(-4px);
+      border-color: #8eb0fa;
+      box-shadow: 0 10px 25px #234b9410;
+    }
+    .symbol {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: #edf3ff;
+      color: #2863d9;
+      font-size: 21px;
+      margin-bottom: 15px;
+    }
+    .subject h3 { font-size: 15px; margin: 0 0 7px; }
+    .subject p { font-size: 11px; color: #8996aa; margin: 0; }
+    .resources {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 13px;
+    }
+    .resource {
+      background: white;
+      border: 1px solid #e5ebf5;
+      padding: 20px 12px;
+      border-radius: 13px;
+      text-align: center;
+      text-decoration: none;
+      color: #174db5;
+      font-weight: bold;
+      font-size: 13px;
+      transition: .2s;
+    }
+    .resource:hover {
+      background: #edf3ff;
+      border-color: #9db9f5;
+    }
+    .resource span {
+      display: block;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .notice {
+      background: white;
+      border-left: 4px solid #2863d9;
+      padding: 18px;
+      margin-top: 25px;
+      border-radius: 8px;
+      color: #667790;
+      font-size: 12px;
+      line-height: 1.7;
+    }
+    footer {
+      background: white;
+      border-top: 1px solid #e8edf6;
+      text-align: center;
+      padding: 28px 15px;
+      color: #8492a8;
+      font-size: 11px;
+    }
+    @media(max-width:700px) {
+      .subjects { grid-template-columns: repeat(2,1fr); }
+      .resources { grid-template-columns: repeat(2,1fr); }
+      nav a { margin-left: 10px; }
+    }
+    @media(max-width:420px) {
+      .subjects { grid-template-columns: 1fr; }
+      header { padding: 0 5%; }
+      .brand { font-size: 13px; }
+      nav a { font-size: 11px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="../index.html">KNOWLEDGE KNIGHT</a>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="#subjects">Subjects</a>
+    <a href="#resources">Resources</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="tag">YOUR LEARNING JOURNEY</div>
+  <h1>Welcome to<br><span>Class 5.</span></h1>
+  <p>
+    Learn something new every day. Explore your subjects,
+    revise important concepts and practise your skills.
+  </p>
+</section>
+
+<section class="section" id="subjects">
+  <div class="tag">SIX SUBJECTS. ENDLESS LEARNING.</div>
+  <h2>Explore Your Subjects</h2>
+  <p class="subtitle">Choose a subject to begin your learning journey.</p>
+
+  <div class="subjects">
+    <a class="subject" href="notes/mathematics.html">
+      <div class="symbol">∑</div>
+      <h3>Mathematics</h3>
+      <p>Maths Mela</p>
+    </a>
+    <a class="subject" href="notes/english.html">
+      <div class="symbol">A</div>
+      <h3>English</h3>
+      <p>Santoor</p>
+    </a>
+    <a class="subject" href="notes/hindi.html">
+      <div class="symbol">अ</div>
+      <h3>Hindi</h3>
+      <p>Rimjhim</p>
+    </a>
+    <a class="subject" href="notes/world-around-us.html">
+      <div class="symbol">🌍</div>
+      <h3>The World Around Us</h3>
+      <p>Our Wondrous World</p>
+    </a>
+    <a class="subject" href="notes/arts.html">
+      <div class="symbol">✿</div>
+      <h3>Arts Education</h3>
+      <p>Bansuri</p>
+    </a>
+    <a class="subject" href="notes/physical-education.html">
+      <div class="symbol">⚽</div>
+      <h3>Physical Education</h3>
+      <p>Khel Yoga</p>
+    </a>
+  </div>
+</section>
+
+<section class="section" id="resources">
+  <div class="tag">YOUR STUDY TOOLKIT</div>
+  <h2>Learning Resources</h2>
+  <p class="subtitle">Choose how you want to learn today.</p>
+
+  <div class="resources">
+    <a class="resource" href="notes/"><span>📘</span>Notes</a>
+    <a class="resource" href="flashcards/"><span>🃏</span>Flashcards</a>
+    <a class="resource" href="practice/"><span>✍️</span>Practice Questions</a>
+    <a class="resource" href="quizzes/"><span>🧠</span>Quizzes</a>
+  </div>
+
+  <div class="notice">
+    <strong>Knowledge Knight Promise</strong><br>
+    Learn at your own pace, practise regularly and keep growing.
+    New original learning resources will be added as they are prepared.
+  </div>
+</section>
+
+<footer>
+  <strong>KNOWLEDGE KNIGHT</strong><br><br>
+  Learn. Practise. Grow.<br>
+  Class 5 Learning Portal
+</footer>
+
+</body>
+</html>
