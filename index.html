@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Knowledge Knight — free study notes, flashcards and quizzes for Classes 5 to 8.">
+  <title>Knowledge Knight | Learn. Practise. Grow.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Knowledge Knight home">
+      <span class="brand-mark">K</span>
+      <span>KNOWLEDGE <b>KNIGHT</b><small>LEARN • PRACTISE • GROW</small></span>
+    </a>
+    <nav>
+      <a href="#resources">Resources</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">FREE LEARNING • CLASSES 5–8</span>
+        <h1>Turn curiosity<br><span>into knowledge.</span></h1>
+        <p>Friendly notes, quick flashcards and fun quizzes to help you learn one step at a time.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#resources">Explore resources</a>
+          <a class="btn secondary" href="#quiz">Try a quiz</a>
+        </div>
+        <div class="hero-note">A little learning every day makes a big difference.</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="book">✦<span>KNOW</span><small>MORE</small></div>
+        <div class="float-card card-a">📘 <b>NOTES</b></div>
+        <div class="float-card card-b">🧠 <b>QUIZZES</b></div>
+        <div class="float-card card-c">⭐ <b>GROW</b></div>
+      </div>
+    </section>
+
+    <section class="quick-stats" aria-label="Platform features">
+      <div><strong>4</strong><span>Class levels</span></div>
+      <div><strong>3</strong><span>Ways to learn</span></div>
+      <div><strong>100%</strong><span>Free to explore</span></div>
+    </section>
+
+    <section id="resources" class="section">
+      <div class="section-heading">
+        <div><span class="eyebrow">YOUR LEARNING SPACE</span><h2>Find your class</h2></div>
+        <p>Choose a class to see its starter learning resources.</p>
+      </div>
+      <div class="class-picker" role="group" aria-label="Choose class">
+        <button class="class-btn active" data-class="5">Class 5</button>
+        <button class="class-btn" data-class="6">Class 6</button>
+        <button class="class-btn" data-class="7">Class 7</button>
+        <button class="class-btn" data-class="8">Class 8</button>
+      </div>
+      <div class="resource-grid">
+        <article class="resource-card">
+          <div class="resource-icon blue">📚</div><span class="tag">READ & UNDERSTAND</span>
+          <h3>Study Notes</h3><p>Short, clear explanations of important ideas.</p>
+          <button class="text-btn" data-open="notes">Open notes <span>→</span></button>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon purple">🗂️</div><span class="tag">REMEMBER MORE</span>
+          <h3>Flashcards</h3><p>Question-and-answer cards for quick revision.</p>
+          <button class="text-btn" data-open="flashcards">Study flashcards <span>→</span></button>
+        </article>
+        <article class="resource-card">
+          <div class="resource-icon yellow">🏆</div><span class="tag">TEST YOURSELF</span>
+          <h3>Quick Quizzes</h3><p>Check what you know with a short quiz.</p>
+          <button class="text-btn" data-open="quiz">Start a quiz <span>→</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section id="learning-area" class="section learning-area" hidden>
+      <div class="section-heading">
+        <div><span class="eyebrow" id="content-eyebrow">CLASS 5</span><h2 id="content-title">Study notes</h2></div>
+        <button class="close-btn" id="close-content" aria-label="Close resource">✕</button>
+      </div>
+      <div id="content-body"></div>
+    </section>
+
+    <section class="daily-tip">
+      <div class="tip-icon">💡</div>
+      <div><span class="eyebrow">KNIGHT'S STUDY TIP</span><h2>Learn a little. Recall a lot.</h2>
+      <p>After reading a topic, close your book and explain three things you remember in your own words.</p></div>
+    </section>
+
+    <section id="about" class="about section">
+      <span class="eyebrow">OUR MISSION</span><h2>Learning should feel possible for everyone.</h2>
+      <p>Knowledge Knight is a student-friendly learning project. We are starting with Classes 5–8 and building useful study materials step by step.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#"><span class="brand-mark">K</span><span>KNOWLEDGE <b>KNIGHT</b><small>LEARN • PRACTISE • GROW</small></span></a>
+    <p>Made for curious learners. Keep asking questions.</p>
+    <small>© <span id="year"></span> Knowledge Knight • Educational project</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
